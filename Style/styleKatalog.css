@@ -135,4 +135,26 @@ body{
     padding: 5px;
     font-size: 25px;
 }
+
+.page_numbering{
+    margin: 0px 40%;
+}
+.numbering a{
+    float: left;
+    display: block;
+    text-align: center;
+    background-color: chocolate;
+    width: 8%;
+    margin: 0px 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 25px;
+}
+
+.numbering a{
+    text-decoration: none;
+    color: white;
+}
+
+
  
