@@ -1,14 +1,21 @@
 .judul{
     text-align: center;
+    background-color: #996600;
+    padding: 20px;
 }
 .subjudul{
     margin-left: 50px;
+    background-color: #996600;
+    opacity: 40%;
 }
+
 .shopping{
     width: 50%;
+    background-color: #996600;
+    opacity: 40%;
 }
 #beli{
-    margin-top: 50px;
+    margin-bottom: 55px;
 }
 .buku{
     margin-left: 50px;
