@@ -1,0 +1,60 @@
+.header {
+    background-color: chocolate;
+}
+
+.bookholic {
+    text-align: center;
+    font-size: 45px;
+    padding: 15px;
+}
+
+.background_login {
+    background-color: darksalmon;
+    padding-top: 3%;
+    padding-bottom: 270px;
+}
+
+.kotak_login {
+    border: solid;
+    padding-bottom: 75px;
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 5%;
+    border-style: groove;
+    background-color: grey;
+}
+
+.Login {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.username {
+    text-align: center;
+    padding: 10px;
+}
+
+.input_user {
+    color: grey;
+}
+
+.password {
+    text-align: center;
+    padding: 5px;
+}
+
+.input_pass {
+    color: grey;
+}
+
+.login_button {
+    float: right;
+    width: 42%;
+    padding-top: 20px;
+}
+
+body {
+    margin: 0;
+}

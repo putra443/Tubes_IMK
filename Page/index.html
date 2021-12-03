@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food.com</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="lib/w3.css">
+		<link rel="stylesheet" href="lib/font-awesome.css">
+		<link rel="stylesheet" href="../T0219046/style/style.css">
+		<!-- Color themes, up to you -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				//jquery
+
+			});
+			function loginform() {
+				let loginform=document.getElementById("login").style.display="block";
+			}
+			function signupform() {
+				let signupform=document.getElementById("signup").style.display="block";
+			}
+			function opsiLiquid() {
+				var x = document.getElementById("liquid");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				}
+				else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+			function panah1() {
+				var x = document.getElementById("panah1");
+				if (x.className == "fa fa-angle-double-up") {
+					x.className = "fa fa-angle-double-down";
+				}
+				else {
+					x.className = "fa fa-angle-double-up";
+				}
+			}
+			function opsiWeight() {
+				var x = document.getElementById("weight");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				}
+				else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+			function panah2() {
+				var x = document.getElementById("panah2");
+				if (x.className == "fa fa-angle-double-up") {
+					x.className = "fa fa-angle-double-down";
+				}
+				else {
+					x.className = "fa fa-angle-double-up";
+				}
+			}
+			function opsiTemperature() {
+				var x = document.getElementById("temperature");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				}
+				else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+			function panah3() {
+				var x = document.getElementById("panah3");
+				if (x.className == "fa fa-angle-double-up") {
+					x.className = "fa fa-angle-double-down";
+				}
+				else {
+					x.className = "fa fa-angle-double-up";
+				}
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		<header class="w3-top w3-theme">
+			<!--HEADER: Logo, search, sign up, log in-->
+			<div id="bar">
+				<img id="logo" src="../T0219046/img/logo.png">
+				
+				<button class="linkbar" href="" onclick="loginform()">
+					Log In
+				</button>
+				<button class="linkbar" href="" onclick="signupform()">
+					Sign Up
+				</button>
+				<input type="search" placeholder="Find a recipe" id="find">
+				<button type="submit" id="tombol">
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
+		</header>
+		
+		<div class="w3-container" style="width: 100%; top: 77px; position: fixed"> <!-- top property value = header height -->
+			<div id="contentHead">
+				<!-- Content title -->
+				<h1 id="contitle"><b>Measurement Converter</b></h1>
+				<h4 id="title2">Enter whole numbers, fractions or decimals (e.g. "5", "1 1/2", "3/4" , "12.5" or ".5")</h4>
+			</div>
+			<div id="accordions">
+				<!-- Converters -->
+				<fieldset style="margin-bottom: 15px;">
+					<legend id="legendLiquid">
+						<button onclick="opsiLiquid(), panah1()" class="w3-button w3-white w3-round-xxlarge w3-large w3-border-theme w3-hover-theme toggler">
+							Liquid Conversion <i id ="panah1" class="fa fa-angle-double-down"></i>
+						</button>
+					</legend>
+					<div id="liquid" class="w3-hide w3-container">
+						<table>
+							<tr>
+								<td style="border-style: solid; border-color: teal;">
+									<input class="w3-input w3-border w3-border-theme value" type="number" value="1" min="1">
+								</td>
+								<td style="border-style: solid; border-color: teal;">
+									<select id="opsi" class="w3-select w3-button w3-white w3-medium w3-border w3-border-theme w3-hover-white select" name="option">
+										<option value="1">TEASPOONS</option>
+										<option value="2">TABLESPOONS</option>
+										<option value="3">FLUID OUNCES</option>
+										<option value="4">CUPS</option>
+										<option value="5">PINTS</option>
+									</select>
+								</td>
+								<td> = </td>
+								<td> (Value in) </td>
+								<td> MILLILITRES </td>
+							</tr>
+						</table>
+					</div>
+					</fieldset>
+					<fieldset style="margin-bottom: 15px;">
+						<legend id="legendWeight">
+							<button onclick="opsiWeight(), panah2()" class="w3-button w3-white w3-round-xxlarge w3-large w3-border-theme w3-hover-theme toggler">
+								Weight Conversion <i id="panah2" class="fa fa-angle-double-down"></i>
+							</button>
+						</legend>
+						<div id="weight" class="w3-hide w3-container">
+							<table>
+								<tr>
+									<td style="border-style: solid; border-color: teal;">
+										<input class="w3-input w3-border w3-border-theme value" type="number" value="1" min="1">
+									</td>
+									<td style="border-style: solid; border-color: teal;">
+										<select id="opsi" class="w3-select w3-button w3-white w3-medium w3-border w3-border-theme w3-hover-white select" name="option">
+											<option value="1">OUNCES</option>
+											<option value="2">POUNDS</option>
+											<option value="3">KILOGRAMS</option>
+										</select>
+									</td>
+									<td> = </td>
+									<td> (Value in) </td>
+									<td> GRAMS</td>
+								</tr>
+							</table>
+						</div>
+					</fieldset>
+					<fieldset style="margin-bottom: 15px;">
+						<legend id="legendTemperature">
+							<button onclick="opsiTemperature(), panah3()" class="w3-button w3-white w3-round-xxlarge w3-large w3-border-theme w3-hover-theme toggler">
+								Temperature Conversion <i id="panah3" class="fa fa-angle-double-down"></i>
+							</button>
+						</legend>
+						<div id="temperature" class="w3-hide w3-container">
+							<table>
+								<tr>
+									<td style="border-style: solid; border-color: teal;">
+										<input class="w3-input w3-border w3-border-theme value" type="number" value="1" min="1">
+									</td>
+									<td>
+										FAHRENHEIT
+									</td>
+									<td> = </td>
+									<td> (Value in) </td>
+									<td> CELCIUS</td>
+								</tr>
+							</table>
+						</div>
+					</fieldset>
+			</div>
+		</div>
+		
+		<!--LOGIN MODAL-->
+		<div id="login" class="w3-modal">
+			<!-- Modal content -->
+			<div class="w3-modal-content">
+				<div class="w3-container">
+				  <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+				  <p>Email</p>
+				  <input type="text" id="inputemail">
+				  <p>Password</p>
+				  <input type="text" id="inputpass">
+				  <br>
+				  <br>
+				  <input id="loginbutton" type="submit" value="Log In">
+				</div>
+			  </div>
+		</div>
+		
+		<!--SIGN UP MODAL-->
+		<div id="signup" class="w3-modal">
+			<!-- Modal content -->
+			<div class="w3-modal-content">
+				<div class="w3-container">
+				  <span onclick="document.getElementById('signup').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+				  <p>Email</p>
+				  <input type="text" id="inputemail">
+				  <p>Password</p>
+				  <input type="text" id="inputpass">
+				  <p>Confirm Password</p>
+				  <input type="text" id="inputpass">
+				  <br>
+				  <br>
+				  <input id="cekbutton" type="checkbox">
+				  I agree to <u>terms and conditions</u>
+				  <br>
+				  <br>
+				  <input id="signupbutton" type="submit" value="Sign Up">
+				</div>
+			  </div>
+		</div>
+	</body>
+</html>
