@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #ffe6cc;
 }
 .topnav {
     overflow: hidden;
@@ -68,16 +69,70 @@ body{
     text-decoration: none;
     color: white;
 }
-.content_catalog{
+.content_catalog_filter{
     background-color:  #ffe6cc;
-    height: 100%;
-    width: 100%;
+    
 }
 
-.content_catalog button{
+.content_catalog_filter button{
     margin: 50px;
     border-radius: 25px;
     border: none;
-    padding: 10px;
-} 
+    padding: 15px;
+    font-size: 25px;
+    background-color: white;
+}
+.content_catalog_filter button:hover{
+    background-color: lightgrey;
+}
+#sort{
+    font-size: 35px;
+    padding: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.content_catalog_books{
+    background-color: white;
+    margin: 2%;
+    border-radius: 25px;
+    padding: 2%;
+    /* //margin-bottom: 10%; */
+}
+.book_row1{
+    margin-left: 12.5%;
+    background-color:  #ffe6cc;
+}
+.book_row1 img{
+    width: 150px;
+    height: 300px;
+    margin: 25px;
+    margin-left: 50px;
+}
+.book{
+    background-color: white;
+    float: left;
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+.book_desc{
+    margin-left: 0;
+    text-align: center;
+}
+.book_button{
+    font-size: 18px;
+    margin: 10px 60px;
+    padding: 1px 0px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: chocolate;
+}
+.book_button i{
+    padding: 5px;
+    font-size: 25px;
+}
  
