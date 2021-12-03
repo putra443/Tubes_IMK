@@ -1,5 +1,5 @@
 .header {
-    background-color: chocolate;
+    background-color: #a36700;
 }
 
 .bookholic {
@@ -9,7 +9,7 @@
 }
 
 .background_login {
-    background-color: darksalmon;
+    background-color: #e0bf84;
     padding-top: 3%;
     padding-bottom: 270px;
 }
@@ -21,7 +21,7 @@
     margin-left: 35%;
     border-radius: 5%;
     border-style: groove;
-    background-color: grey;
+    background-color: #bab5ad;
 }
 
 .Login {
