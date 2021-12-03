@@ -2,20 +2,27 @@
     <head>
         <link rel="stylesheet" href="../lib/font-awesome.css">
 		<link rel="stylesheet" href="../lib/font-awesome.min.css">
-        
         <link rel="stylesheet" href="../Style/styleKatalog.css">
     </head>
     <body>
-        <div class="header">
-            <div class="judul">
-                Bookholic
-                
+        <div class="topnav">
+            <a href="../Page/katalog.html" id="title">Bookholic</a>
+            <input type="text" placeholder="Search by title / author / ISBN here..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            
+            <a href=""><i class="fa fa-shopping-cart cart"></i></a>
+            <a href="../Page/profil.html" id="profil">Hi, user</a>
+            <a href="../Page/profil.html"><i class="fa fa-user user"></i></a>
+            
+          </div>
+          <div class="content_catalog">
+            <div>
+                <p style="margin: 0;">Sort By:</p>
+                <button type="button">Title</button>
+                <button type="button">Author</button>
+                <button type="button">Rating (High-Low)</button>
+                <button type="button">Rating (Low-High)</button>
             </div>
-            <div class="searchbar">
-                <form class="search" action=""> 
-                    <input type="text" placeholder="Search by title / author / ISBN here...">
-                </form>
-            </div>
-        </div>
+          </div>
     </body>
 </html>
