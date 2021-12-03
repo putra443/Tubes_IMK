@@ -1,5 +1,7 @@
 .judul{
     text-align: center;
+    background-color: sienna;
+    padding: 20px;
 }
 .subjudul{
     margin-left: 50px;
@@ -8,7 +10,7 @@
     width: 50%;
 }
 #beli{
-    margin-top: 50px;
+    margin-bottom: 55px;
 }
 .buku{
     margin-left: 50px;
