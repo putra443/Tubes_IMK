@@ -1,0 +1,19 @@
+.judul{
+    text-align: center;
+}
+.subjudul{
+    margin-left: 50px;
+}
+.shopping{
+    width: 50%;
+}
+#beli{
+    margin-top: 50px;
+}
+.buku{
+    margin-left: 50px;
+    padding: 20px;
+}
+.list{
+    background-color: grey;
+}
