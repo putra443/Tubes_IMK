@@ -1,0 +1,12 @@
+.header{
+    background-color: chocolate;  
+}
+.judul{
+    color: white;
+    font-size: 40px;
+    margin-left: 2%;
+    padding: 1%;
+}
+.searchbar {
+    float: left;
+}
