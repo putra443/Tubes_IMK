@@ -15,6 +15,7 @@
 }
 
 .kotak_login {
+    margin-top: 10%;
     border: solid;
     padding-bottom: 75px;
     width: 30%;
@@ -31,31 +32,48 @@
     font-size: 40px;
 }
 
+
 .username {
     text-align: center;
-    padding: 10px;
+    margin: 5%;
 }
 
 .input_user {
-    color: grey;
+    width: 100%;
+    height: 30px;
+
 }
 
 .password {
     text-align: center;
-    padding: 5px;
+    margin: 5%;
 }
 
 .input_pass {
-    color: grey;
+    width: 100%;
+    height: 30px;
 }
 
 .login_button {
-    float: right;
-    width: 42%;
-    padding-top: 20px;
+    margin-left: 42.5%;
+
     
 }
 
+#btn_login{
+    display: block;
+    background-color: #a36700;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
 body {
+    margin: 0;
+    background-color: #e0bf84;
+}
+.user_icon{
+    text-align: center;
+    font-size: 60px;
     margin: 0;
 }
