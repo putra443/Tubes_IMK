@@ -5,14 +5,13 @@
 }
 .subjudul{
     margin-left: 50px;
-    background-color: #996600;
-    opacity: 40%;
 }
-
+.background{
+    background-color: rgb(217, 189, 134);
+    padding-top: 2%;
+}
 .shopping{
     width: 50%;
-    background-color: #996600;
-    opacity: 40%;
 }
 #beli{
     margin-bottom: 55px;
@@ -23,4 +22,8 @@
 }
 .list{
     background-color: grey;
+    padding: 10px;
+}
+#daleman{
+    padding: 10px;
 }
