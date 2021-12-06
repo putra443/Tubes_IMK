@@ -1,7 +1,7 @@
 
 function slideumum() {
-    var a = document.getElementById("ikon1");
-    var dropdown = document.getElementById("ask1");
+    var a = document.getElementById("ikonumum1");
+    var dropdown = document.getElementById("askumum1");
 
     if (a.className == "fa fa-angle-double-up") {
         a.className = "fa fa-angle-double-down";
