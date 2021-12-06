@@ -111,70 +111,25 @@ body{
     background: white;
 }
 
-#book0 {
+.book0 {
     /* margin: 25px 25px; */
     margin-top: 25px;
     margin-left: 50px;
+    margin-bottom: 25px;
     width: 15%;
-    /* height: 15%; */
+    height: 15%;
 }
 
 .book_field0 {
     display: block;
     border-style: solid;
     margin: 50px;
-    margin-bottom: 50px;
     background-color: #d6d6d6;
 }
 
-/* #checkbox1 {
-    float: left;
-    margin-left: 50px;
-    margin-top: 210px;
-    border-radius: 5px;
-    border: 2px solid #555;
-    width: 25px;
-    height: 25px;
-    background: white;
-} */
-
-/* #book1 {
-    margin: 25px 25px;
-    margin-left: 50px;
-    width: 15%;
-    height: 15%;
-} */
-
-/* .book_field1 {
-    display: block;
-    border-style: solid;
-    margin: 50px;
-    margin-bottom: 50px;
-    background-color: #d6d6d6;
-} */
-
-/* #checkbox2 {
-    float: left;
-    margin-left: 50px;
-    margin-top: 210px;
-    border-radius: 5px;
-    border: 2px solid #555;
-    width: 25px;
-    height: 25px;
-    background: white;
-} */
-
-/* #book2 {
-    margin: 25px 25px;
-    margin-left: 50px;
-    width: 15%;
-    height: 15%;
-} */
-
-/* .book_field2 {
-    display: block;
-    border-style: solid;
-    margin: 50px;
-    margin-bottom: 50px;
-    background-color: #d6d6d6;
-} */
+.book_info {
+    float: right;
+    margin-right: 135px;
+    /* text-align: left; */
+    /* padding-top: 10px; */
+}
