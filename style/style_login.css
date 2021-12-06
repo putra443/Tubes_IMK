@@ -9,7 +9,6 @@
 }
 
 .background_login {
-    background-color: #e0bf84;
     padding-top: 3%;
     padding-bottom: 270px;
 }
@@ -22,7 +21,7 @@
     margin-left: 35%;
     border-radius: 5%;
     border-style: groove;
-    background-color: #bab5ad;
+    background-color: #e0bf84
 }
 
 .Login {
@@ -70,7 +69,7 @@
 }
 body {
     margin: 0;
-    background-color: #e0bf84;
+    background-image: url(../Image/photo-1603484477859-abe6a73f9366.jpg);
 }
 .user_icon{
     text-align: center;
