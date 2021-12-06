@@ -58,13 +58,30 @@ body{
     border-radius: 25px;
 }
 
-.topnav button {
-    float: left;
-    margin-top: 25px;
-    margin-right: 16px;
-    margin-left: 5px;
-    padding: 6px;
-    border-radius: 25px;
+.user{
+    font-size: 50px;
+    float:right;
+    margin:15px ;
+    color: white;
+}
+
+#profil{
+    float: right;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.cart{
+    float: right;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
 }
 
 #cart_title {
@@ -86,19 +103,20 @@ body{
 #checkbox0 {
     float: left;
     margin-left: 50px;
-    margin-top: 210px;
+    margin-top: 180px;
     border-radius: 5px;
     border: 2px solid #555;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background: white;
 }
 
 #book0 {
-    margin: 25px 25px;
+    /* margin: 25px 25px; */
+    margin-top: 25px;
     margin-left: 50px;
     width: 15%;
-    height: 15%;
+    /* height: 15%; */
 }
 
 .book_field0 {
@@ -109,7 +127,7 @@ body{
     background-color: #d6d6d6;
 }
 
-#checkbox1 {
+/* #checkbox1 {
     float: left;
     margin-left: 50px;
     margin-top: 210px;
@@ -118,24 +136,24 @@ body{
     width: 25px;
     height: 25px;
     background: white;
-}
+} */
 
-#book1 {
+/* #book1 {
     margin: 25px 25px;
     margin-left: 50px;
     width: 15%;
     height: 15%;
-}
+} */
 
-.book_field1 {
+/* .book_field1 {
     display: block;
     border-style: solid;
     margin: 50px;
     margin-bottom: 50px;
     background-color: #d6d6d6;
-}
+} */
 
-#checkbox2 {
+/* #checkbox2 {
     float: left;
     margin-left: 50px;
     margin-top: 210px;
@@ -144,30 +162,19 @@ body{
     width: 25px;
     height: 25px;
     background: white;
-}
+} */
 
-#book2 {
+/* #book2 {
     margin: 25px 25px;
     margin-left: 50px;
     width: 15%;
     height: 15%;
-}
+} */
 
-.book_field2 {
+/* .book_field2 {
     display: block;
     border-style: solid;
     margin: 50px;
     margin-bottom: 50px;
     background-color: #d6d6d6;
-}
-
-#title_b1 {
-    float: right;
-    font-size: 50px;
-    width: 75%;
-}
-
-#author_b1 {
-    float: right;
-    margin-bottom: 50%;
-}
+} */
