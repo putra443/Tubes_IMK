@@ -92,7 +92,7 @@ body{
 }
 
 .cart_field {
-    display: block;
+    /* display: block; */
     border-style: solid;
     border-radius: 20px;
     margin-left: 70px;
@@ -128,8 +128,49 @@ body{
 }
 
 .book_info {
-    float: right;
-    margin-right: 135px;
+    float: left;
     /* text-align: left; */
     /* padding-top: 10px; */
+}
+
+.image{
+    float: left;
+}
+
+.cart_content{
+    background-color: white;
+    border-style: 2px solid black;
+    border-radius: 25px;
+    margin: 0% 5% ;
+    padding: 2% 0%;
+}
+
+.item{
+    display: flex;
+    justify-content: left;
+    width: 75%;
+    height: 20%;
+    margin: 1% 12.5%;
+
+    background-color: #999999;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.item img{
+    width: 200px;
+    height: 300px;
+    margin: 2%;
+}
+
+.checkbox{
+    margin: 12.5% 2%;
+    width: 25px;
+    height: 25px;
+}
+
+.item_desc{
+    margin: 2%;
+    color: white;
+    font-size: 30px;
 }

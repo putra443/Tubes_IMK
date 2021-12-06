@@ -1,3 +1,4 @@
+let booksStorage = (JSON.parse(localStorage.getItem('array_books')));
 let user = [
     {username:"martin", password:"martin123"},
     {username:"putra", password:"putra123"},

@@ -1,5 +1,6 @@
 
 //initiate array
+myStorage = window.localStorage;
 
 let books = [
     {title:"Book Cover Design Formula", rating:6 , price:120000, author:"Anita Nipane" , image_url:"../Image/61ZKNw0xixL.jpg", in_cart:0
@@ -13,17 +14,21 @@ let books = [
         title:"Enchanted", rating:9 , price:250000, author:"Tennant Redbank" , image_url:"../Image/51WcTS6kyzL.jpg", in_cart:0
     }
 ];
-for(var i=0;i<books.length;i++){
+
+localStorage.setItem('array_books', JSON.stringify(books));
+let booksStorage = (JSON.parse(localStorage.getItem('array_books')));
+
+for(var i=0;i<booksStorage.length;i++){
     var img = document.getElementById("img"+i);
     var title = document.getElementById("title"+i);
     var author = document.getElementById("author"+i);
     var price = document.getElementById("price"+i);
     var rating = document.getElementById("rating"+i);
-    img.src = books[i].image_url;
-    title.innerHTML = books[i].title;
-    author.innerHTML = books[i].author;
-    rating.innerHTML = "Rating : "+books[i].rating;
-    price.innerHTML = "Rp." + books[i].price;
+    img.src = booksStorage[i].image_url;
+    title.innerHTML = booksStorage[i].title;
+    author.innerHTML = booksStorage[i].author;
+    rating.innerHTML = "Rating : "+booksStorage[i].rating;
+    price.innerHTML = "Rp." + booksStorage[i].price;
     
 }
 
