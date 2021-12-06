@@ -2,28 +2,39 @@
 <html>
     <head>
         <title>Cart</title>
-        <link rel="stylesheet" href="lib/font-awesome.min.css">
-        <link rel="stylesheet" href="lib/font-awesome.css">
+        <link rel="stylesheet" href="../lib/font-awesome.css">
+        <link rel="stylesheet" href="../lib/font-awesome.min.css">
         <link rel="stylesheet" href="../Style/stylecart.css">
     </head>
+
     <body>
-		    <div class="judul" style="flex: 1">
-                <span class="cart" style="font-weight: bold"> Bookholic</span>
+        <div class="topnav">
+            <a href="../Page/katalog.html" id="title">Bookholic</a>
+            <input type="text" placeholder="Search by title / author / ISBN here..">
+            <button type="submit"><i class="fa fa-search"></i></button> 
+        </div>
+
+        <div class="shopping_cart">
+            <p id="cart_title">My Shopping Cart</p>
+        </div>
+
+        <div class="cart_field">
+            <div class="book_field0">
+                <input type="checkbox" id="checkbox0">
+                <img id="book0" src="../Image/61ZKNw0xixL.jpg">
+                <p id="title_b1">Title Book 1</p>
+                <p id="author_b1">Author : Mr. Nganga</p>
             </div>
-            <div class="background">
-            <div class="subjudul">
-            <h1 style="font-size: 30px;"><b>My Shoppping Cart</b></h1>
+
+            <div class="book_field1">
+                <input type="checkbox" id="checkbox1">
+                <img id="book1" src="../Image/61ZKNw0xixL.jpg">
             </div>
-            <div class="shopping">
-                <fieldset style="margin-bottom: 20px; border-radius: 16px;background-color:white;padding:10px;">
-                    <div class="list">
-                        <table id="daleman">
-                            <td><input type="checkbox" name="" id="beli"></td>
-                            <img src="blabla" class="buku" style="align-self: center; height:100%">
-                    
-                        </table>
-                    </div>
-                </fieldset>
+
+            <div class="book_field2">
+                <input type="checkbox" id="checkbox2">
+                <img id="book2" src="../Image/61ZKNw0xixL.jpg">
             </div>
         </div>
     </body>
+</html>
