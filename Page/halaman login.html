@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../style/style_login.css">
         <link rel="stylesheet" href="../lib/font-awesome.css">
         <link rel="stylesheet" href="../lib/font-awesome.min.css">
-        <script src="../style/script,js"></script>
+        <script src="../js/scriptLogin.js"></script>
     </head>
     
         <body>
@@ -24,13 +24,13 @@
                      </div>
                      <p class="user_icon"><i class="fa fa-user"></i></p>
                      <div class="username">
-                         <input class="input_user" type="text" placeholder="Enter username">
+                         <input class="input_user" id="username" type="text" placeholder="Enter username">
                      </div>
                     <div class="password">
-                         <input class="input_pass" type="text" placeholder="Enter password">
+                         <input class="input_pass" id="pass" type="text" placeholder="Enter password">
                      </div>
                      <div class="login_button">
-                        <button type="button" id="btn_login">Login</button>
+                        <button type="button" id="btn_login" onclick="loginValidation()">Login</button>
                      </div>
                 </div>
             </div>
