@@ -2,7 +2,7 @@ let booksStorage = (JSON.parse(localStorage.getItem('array_books')));
 let user = [
     {username:"martin", password:"martin123"},
     {username:"putra", password:"putra123"},
-    {username:"ruben", password:"ruben123"},
+    {username:"ruben pepeu", password:"ruben123"},
     {username:"michael", password:"michael123"},
 ];
 localStorage.setItem("array_user",JSON.stringify(user));
@@ -23,6 +23,7 @@ function loginValidation(){
         }
         else if(usernameData == usernameInput && passwordData == passwordInput){
             window.location.href = "../Page/katalog.html";
+            localStorage.setItem('current_user', JSON.stringify(usernameData));
             break;
         }
         else if((usernameData != usernameInput || passwordData != passwordInput)&& i==4){

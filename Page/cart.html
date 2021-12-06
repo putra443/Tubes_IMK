@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="../lib/font-awesome.css">
         <link rel="stylesheet" href="../lib/font-awesome.min.css">
         <link rel="stylesheet" href="../Style/stylecart.css">
+        <script src="../js/scriptCart.js" defer></script>
     </head>
 
     <body>
@@ -13,7 +14,7 @@
             <input type="text" placeholder="Search by title / author / ISBN here..">
             <button type="submit"><i class="fa fa-search"></i></button>
             
-            <a href=""><i class="fa fa-shopping-cart cart"></i></a>
+            <a href="../Page/cart.html"><i class="fa fa-shopping-cart cart"></i></a>
             <a href="../Page/profil.html" id="profil">Hi, user</a>
             <a href="../Page/profil.html"><i class="fa fa-user user"></i></a> 
         </div>
@@ -40,8 +41,8 @@
         </div> -->
 
         <div class="cart_content">
-            <div class="item">
-                <input type="checkbox" class="checkbox">
+            <div class="item" id="item0">
+                <input type="checkbox" class="checkbox" id="checkbox0" onclick="checkboxGG()">
                 <img src="../Image/61ZKNw0xixL.jpg">
                 <div class="item_desc">
                 <p id="title0"> <b>Title</b> : Nganga</p>
@@ -63,6 +64,13 @@
                 <p id="price1"> <b style="color: #990000;">Rp.111000</b> </p>
                 
                 </div>
+            </div>
+            <div class="price_info">
+                <p id="sub_total">Sub Total Rp.222000</p>
+                <p id="tax">Tax : 10%</p>
+                <hr>
+                <p id="total_price">Total : 244200</p>
+                <button id="checkout">Checkout</button>
             </div>
         </div>
     </body>

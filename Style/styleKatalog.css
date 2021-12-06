@@ -1,8 +1,15 @@
-body{
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Candara.ttf);
+}
+body {
+	font-family: fonts;
+	background-color: #ebebeb;
     margin: 0;
     background-color: none;
     background-image: url("../Image/photo-1603484477859-abe6a73f9366.jpg");
 }
+
 .topnav {
     overflow: hidden;
     background-color: chocolate;
@@ -71,7 +78,7 @@ body{
     color: white;
 }
 .content_catalog_filter{
-    background-color:  #ffe6cc;
+    background-color:  none;
     
 }
 

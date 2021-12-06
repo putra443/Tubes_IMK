@@ -1,4 +1,8 @@
 
+
+let current_user = JSON.parse(localStorage.getItem('current_user')) ;
+document.getElementById('profil').innerHTML = "Hi, " + current_user;
+
 //initiate array
 myStorage = window.localStorage;
 
@@ -143,7 +147,8 @@ const onClick = function() {
   function addCart(){
     let id = this.id;
     console.log(books[id.substring(4)].in_cart);
-    books[id.substring(4)].in_cart+=1;
+    // books[id.substring(4)].in_cart+=1;
+    
     console.log(books[id.substring(4)].title +" in cart :  "+ books[id.substring(4)].in_cart);
     alert("books has been added to your shopping cart");
 }

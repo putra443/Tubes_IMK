@@ -1,3 +1,11 @@
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Candara.ttf);
+}
+body {
+	font-family: fonts;
+	background-color: #ebebeb;
+}
 .header {
     background-color: #a36700;
 }

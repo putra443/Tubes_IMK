@@ -1,3 +1,12 @@
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Candara.ttf);
+}
+body {
+	font-family: fonts;
+	background-color: #ebebeb;
+}
+
 body{
     margin: 0;
     background-color: none;
@@ -100,7 +109,7 @@ body{
     background-color: white;
 }
 
-#checkbox0 {
+/* #checkbox0 {
     float: left;
     margin-left: 50px;
     margin-top: 180px;
@@ -109,7 +118,7 @@ body{
     width: 15px;
     height: 15px;
     background: white;
-}
+} */
 
 .book0 {
     /* margin: 25px 25px; */
@@ -173,4 +182,27 @@ body{
     margin: 2%;
     color: white;
     font-size: 30px;
+}
+.price_info{
+    margin-left: 75%;
+    margin-right: 5%;
+}
+#sub_total{
+    font-size: larger;
+    color: #990000;
+}
+#tax{
+    font-size: larger;
+    color: #990000;
+}
+#total_price{
+    font-size: larger;
+    color: #990000;
+}
+#checkout{
+    font-size: 25px;
+    background-color: chocolate;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }
