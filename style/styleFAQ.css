@@ -71,3 +71,55 @@ body {
     text-decoration: none;
     color: white;
 }
+
+.headfaq{
+    text-align: center;
+}
+
+#umum1{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#ask1{
+    display: none;
+    justify-content: center;
+    
+}
+
+#slide1{
+    background-color: transparent;
+    border: none;
+}
+
+#pay1{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#askpay1{
+    display: none;
+    justify-content: center;
+    
+}
+
+#slide2{
+    background-color: transparent;
+    border: none;
+}
+
+#pesanan1{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#askpesan1{
+    display: none;
+    justify-content: center;
+    
+}
+
+#slide3{
+    background-color: transparent;
+    border: none;
+}

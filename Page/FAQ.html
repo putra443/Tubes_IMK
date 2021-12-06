@@ -3,8 +3,9 @@
         <link rel="stylesheet" href="../lib/font-awesome.css">
 		<link rel="stylesheet" href="../lib/font-awesome.min.css">
         <link rel="stylesheet" href="../Style/styleKatalog.css">
-
+        <link rel="stylesheet" href="../Style/styleFAQ.css">
         <script src="../js/katalog_js.js" defer></script>
+        <script src="../js/FAQ.js" ></script>
     </head>
 
     <body>
@@ -16,5 +17,61 @@
             <a href=""><i class="fa fa-shopping-cart cart"></i></a>
             <a href="../Page/profil.html" id="profil">Hi, user</a>
             <a href="../Page/profil.html"><i class="fa fa-user user"></i></a> 
+        </div>
+        <div class="headfaq">
+            <h1> DAFTAR PERTANYAAN (FAQ)</h1>
+            <h2> UMUM </h2>
+            <p> pertanyaan umum mengenai BOOKHOLIC</p>
+            <fieldset style="margin-bottom: 20px;">
+                <legend id ="umum1">
+                    <button id="slide1" class="w3-button w3-white w3-round-xxlarge w3-large w3-border w3-border-theme w3-hover-theme toggler" onclick="slideumum()">
+                        apakah ini berhasil? <i id="ikon1" class="fa fa-angle-double-down" ></i>
+                    </button>
+                </legend>
+                <div id="ask1" class="w3-hide w3-container">
+                    <table>
+                        <tr>
+                            <td style="border-style: solid; border-color: black; border-radius: 22pt;">
+                                <p> jeng jeng jeng</p></td>
+                        </tr>
+                    </table>
+                </div>
+                </fieldset>
+
+            <h3> PEMBAYARAN </h3>
+            <p> pertanyaan mengenai cara pembayaran</p>
+            <fieldset style="margin-bottom: 20px;">
+                <legend id ="pay1">
+                    <button id="slide2" class="w3-button w3-white w3-round-xxlarge w3-large w3-border w3-border-theme w3-hover-theme toggler" onclick="slidepay()">
+                        apakah ini berhasil? <i id="ikonpay1" class="fa fa-angle-double-down" ></i>
+                    </button>
+                </legend>
+                <div id="askpay1" class="w3-hide w3-container">
+                    <table>
+                        <tr>
+                            <td style="border-style: solid; border-color: black; border-radius: 22pt;">
+                                <p> jeng jeng jeng</p></td>
+                        </tr>
+                    </table>
+                </div>
+                </fieldset>
+
+                <h3> PESANAN </h3>
+            <p> pertanyaan mengenai informasi pesanan</p>
+            <fieldset style="margin-bottom: 20px;">
+                <legend id ="pesanan1">
+                    <button id="slide3" class="w3-button w3-white w3-round-xxlarge w3-large w3-border w3-border-theme w3-hover-theme toggler" onclick="slidepesan()">
+                        apakah ini berhasil? <i id="ikonpesan1" class="fa fa-angle-double-down" ></i>
+                    </button>
+                </legend>
+                <div id="askpesan1" class="w3-hide w3-container">
+                    <table>
+                        <tr>
+                            <td style="border-style: solid; border-color: black; border-radius: 22pt;">
+                                <p> jeng jeng jeng</p></td>
+                        </tr>
+                    </table>
+                </div>
+                </fieldset>
         </div>
     </body>
