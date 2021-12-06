@@ -22,3 +22,6 @@ let books = [
     }
 ];
 
+var img1 = document.getElementById('img1');
+img1.src = books[0].image_url;
+
