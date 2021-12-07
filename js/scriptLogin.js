@@ -29,8 +29,6 @@ function loginValidation(){
         else if((usernameData != usernameInput || passwordData != passwordInput)&& i==4){
             alert("Username atau Password Salah");  
         }
-
-        
     }
 
 }

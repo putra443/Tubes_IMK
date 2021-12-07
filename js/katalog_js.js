@@ -157,10 +157,3 @@ document.getElementById('cart1').onclick = addCart;
 document.getElementById('cart2').onclick = addCart;
 document.getElementById('cart3').onclick = addCart;
 document.getElementById('cart4').onclick = addCart;
-
-
-
-
-
-
-
