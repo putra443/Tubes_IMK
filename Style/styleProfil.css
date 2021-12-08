@@ -1,0 +1,34 @@
+.title{
+    font-size: 50px;
+    margin: 2%;
+    margin-left: 5%;
+}
+
+.profil_banner{
+    background-color: darkgoldenrod;
+    margin: 0px 25%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.profil_info{
+    background-color: aliceblue;
+    margin:0px 25%;
+    padding: 30px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius: 25px;
+}
+
+.profil_info_element{
+    font-size: 30px;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.payment_info{
+    border: 2px solid aqua;
+    border-radius: 25px;
+    font-size: 30px;
+    padding: 15px;
+}
