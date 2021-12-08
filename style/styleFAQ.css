@@ -1,4 +1,9 @@
+@font-face {
+    font-family: fonts;
+    src: url(../fonts/Candara.ttf);
+}
 body {
+    font-family: fonts;
     margin: 0;
     background-color: none;
     background-image: url("../Image/photo-1603484477859-abe6a73f9366.jpg");
@@ -76,7 +81,24 @@ body {
     text-align: center;
 }
 
+.umum{
+    font-size: 24px;
+}
+
+.infoumum{
+    font-size: 17px;
+}
 #umum1{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#umum2{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#umum3{
 	border-style: solid;
 	border-radius: 22pt;
 	border-color: black;
@@ -84,14 +106,44 @@ body {
 #askumum1{
     display: none;
     justify-content: center;
-    
 }
-
-#slide1{
+#askumum2{
+    display: none;
+    justify-content: center;
+}
+#askumum3{
+    display: none;
+    justify-content: center;
+}
+#isiu{
+    border-style: solid;
+    border-color: black;
+    border-radius: 22pt;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#slideu1{
     background-color: transparent;
     border: none;
+    font-size: 18px;
+}
+#slideu2{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+#slideu3{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+.pembayaran{
+    font-size: 24px;
 }
 
+.infobayar{
+    font-size: 17px;
+}
 #pay1{
 	border-style: solid;
 	border-radius: 22pt;
@@ -102,12 +154,19 @@ body {
     justify-content: center;
     
 }
-
 #slide2{
     background-color: transparent;
     border: none;
+    font-size: 18px;
 }
 
+.pesanan{
+    font-size: 24px;
+}
+
+.infopesan{
+    font-size: 17px;
+}
 #pesanan1{
 	border-style: solid;
 	border-radius: 22pt;
@@ -122,4 +181,26 @@ body {
 #slide3{
     background-color: transparent;
     border: none;
+    font-size: 18px;
+}
+
+.lain{
+    font-size: 24px;
+}
+
+#lain1{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#asklain1{
+    display: none;
+    justify-content: center;
+    
+}
+
+#slide4{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
 }
