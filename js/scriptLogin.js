@@ -1,12 +1,16 @@
 let booksStorage = (JSON.parse(localStorage.getItem('array_books')));
 let user = [
-    {username:"martin", password:"martin123"},
-    {username:"putra", password:"putra123"},
-    {username:"ruben pepeu", password:"ruben123"},
-    {username:"michael", password:"michael123"},
+    {username:"martin", password:"martin123", amount_to_pay:0},
+    {username:"putra", password:"putra123", amount_to_pay:0},
+    {username:"ruben pepeu", password:"ruben123", amount_to_pay:0},
+    {username:"michael", password:"michael123", amount_to_pay:0},
 ];
+
+
+user.push({username:"oogway", password:"dewasakura", amount_to_pay:0});
 localStorage.setItem("array_user",JSON.stringify(user));
 let arrayUser = (JSON.parse(localStorage.getItem('array_user')));
+
 function loginValidation(){
     // window.location.href = "../Page/katalog.html";
     let usernameInput = document.getElementById('username').value;
