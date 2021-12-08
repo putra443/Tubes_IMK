@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../lib/font-awesome.css">
+		<link rel="stylesheet" href="../lib/font-awesome.min.css">
+        <link rel="stylesheet" href="../style/stylePaymentInfo.css">
+        <script src="../js/scriptPaymentInfo.js"></script>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="../Page/katalog.html" id="title">Bookholic</a>
+            <input type="text" placeholder="Search by title / author / ISBN here..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            
+            <a href="../Page/cart.html"><i class="fa fa-shopping-cart cart"></i></a>
+            <a href="../Page/profil.html" id="profil">Hi, user</a>
+            <a href="../Page/profil.html"><i class="fa fa-user user"></i></a> 
+        </div>
+
+        <h2>Responsive Checkout Form</h2>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="First Name" placeholder="Enter Your Name">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="Email" placeholder="yourname@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="Address" placeholder="Enter Your Address">
+
+                                <label for="fname>">Payment</label>
+                                <div id="vaccount" class="col-50">
+                                    <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">Virtual Account</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                          <a href="">OVO <img id="iOVO" src="../Image/Logo_ovo_purple.svg.png"></a>
+                                          <a href="">GO PAY <img id="iGOPAY" src="../Image/gopay_uWu.png"></a>
+                                          <a href="">DANA <img id="iDANA" src="../Image/d4n4_uWu.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
