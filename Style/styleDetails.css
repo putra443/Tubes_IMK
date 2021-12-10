@@ -1,0 +1,17 @@
+.details_container{
+    margin: 5% 15%;
+    background-color: white;
+    padding: 45px;
+    border-radius: 25px;
+}
+
+.details_image img{
+    width: 300px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+.details_info{
+    float: right;
+    margin-right: 25%;
+}
