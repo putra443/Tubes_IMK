@@ -80,7 +80,14 @@ body {
 .headfaq{
     text-align: center;
 }
-
+#isi{
+    border-style: solid;
+    border-color: black;
+    border-radius: 22pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
 .umum{
     font-size: 24px;
 }
@@ -115,13 +122,6 @@ body {
     display: none;
     justify-content: center;
 }
-#isiu{
-    border-style: solid;
-    border-color: black;
-    border-radius: 22pt;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 #slideu1{
     background-color: transparent;
     border: none;
@@ -149,17 +149,29 @@ body {
 	border-radius: 22pt;
 	border-color: black;
 }
+#pay2{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
 #askpay1{
     display: none;
     justify-content: center;
-    
 }
-#slide2{
+#askpay2{
+    display: none;
+    justify-content: center;
+}
+#slideb1{
     background-color: transparent;
     border: none;
     font-size: 18px;
 }
-
+#slideb2{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
 .pesanan{
     font-size: 24px;
 }
@@ -175,15 +187,27 @@ body {
 #askpesan1{
     display: none;
     justify-content: center;
-    
 }
-
-#slide3{
+#slidep1{
     background-color: transparent;
     border: none;
     font-size: 18px;
 }
-
+#pesanan2{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#askpesan2{
+    display: none;
+    justify-content: center;
+    
+}
+#slidep2{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
 .lain{
     font-size: 24px;
 }
@@ -198,9 +222,39 @@ body {
     justify-content: center;
     
 }
-
-#slide4{
+#slidel1{
     background-color: transparent;
     border: none;
     font-size: 18px;
+}
+#lain2{
+	border-style: solid;
+	border-radius: 22pt;
+	border-color: black;
+}
+#asklain2{
+    display: none;
+    justify-content: center;
+    
+}
+#slidel2{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.contact{
+    overflow: hidden;
+    background-color: chocolate;
+    margin-top: 80px;
+}
+#contactus{
+    float: left;
+    margin-right: 30px;
+    margin-left: 60px;
+    color: white;
+}
+#contacts{
+    font-size: 18px;
+    color: white;
 }

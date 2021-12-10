@@ -14,12 +14,12 @@
             <input type="text" placeholder="Search by title / author / ISBN here..">
             <button type="submit"><i class="fa fa-search"></i></button>
             
-            <a href=""><i class="fa fa-shopping-cart cart"></i></a>
+            <a href="../Page/cart.html"><i class="fa fa-shopping-cart cart"></i></a>
             <a href="../Page/profil.html" id="profil">Hi, user</a>
             <a href="../Page/profil.html"><i class="fa fa-user user"></i></a> 
         </div>
         <div class="headfaq">
-            <h1> DAFTAR PERTANYAAN (FAQ)</h1>
+            <h1> FREQUENTLY ASKED QUESTION</h1>
             <h2 class="umum"> UMUM </h2>
             <p class="infoumum"> pertanyaan umum mengenai BOOKHOLIC</p>
             <fieldset style="margin-bottom: 20px;">
@@ -31,7 +31,7 @@
                 <div id="askumum1" >
                     <table>
                         <tr>
-                            <td id="isiu">
+                            <td id="isi">
                                 <p> Produk yang diperjualbelikan oleh BOOKHOLIC merupakan produk yang dapat dipastikan keasliannya.</p></td>
                         </tr>
                     </table>
@@ -46,7 +46,7 @@
                 <div id="askumum2" >
                     <table>
                         <tr>
-                            <td id="isiu">
+                            <td id="isi">
                                 <p> Produk yang diperjualbelikan oleh BOOKHOLIC dapat dipastikan keasliannya melalui pengecekan nomor seri buku.</p></td>
                         </tr>
                     </table>
@@ -61,7 +61,7 @@
                     <div id="askumum3" >
                         <table>
                             <tr>
-                                <td id="isiu">
+                                <td id="isi">
                                     <p> Lokasi toko BOOKHOLIC terdapat di Jalan Hati Ceria No.5 Bandung, Jawa Barat.</p></td>
                             </tr>
                         </table>
@@ -71,53 +71,103 @@
             <p class="infobayar"> pertanyaan mengenai cara pembayaran</p>
             <fieldset style="margin-bottom: 20px;">
                 <legend id ="pay1">
-                    <button id="slide2"  onclick="slidepay()">
-                        apakah ini berhasil? <i id="ikonpay1" class="fa fa-angle-double-down" ></i>
+                    <button id="slideb1"  onclick="slidepay1()">
+                        Bagaimana cara saya memeriksa status keranjang saya? <i id="ikonpay1" class="fa fa-angle-double-down" ></i>
                     </button>
                 </legend>
                 <div id="askpay1" >
                     <table>
                         <tr>
-                            <td style="border-style: solid; border-color: black; border-radius: 22pt;">
-                                <p> jeng jeng jeng</p></td>
+                            <td id="isi">
+                                <p> Status dari produk yang dipilih dapat diperiksa di halaman Shopping Cart (logo keranjang di atas kanan).</p></td>
                         </tr>
                     </table>
-                </div>
+                </div> 
                 </fieldset>
-
+                <fieldset style="margin-bottom: 20px;">
+                    <legend id ="pay2">
+                        <button id="slideb2"  onclick="slidepay2()">
+                            Metode pembayaran apa saja yang dapat diterima? <i id="ikonpay2" class="fa fa-angle-double-down" ></i>
+                        </button>
+                    </legend>
+                    <div id="askpay2" >
+                        <table>
+                            <tr>
+                                <td id="isi">
+                                    <p> Metode pembayaran dapat dilakukan melalui OVO, GoPay, DANA</p></td>
+                            </tr>
+                        </table>
+                    </div> 
+                    </fieldset>
             <h3 class="pesanan"> PESANAN </h3>
             <p class="infopesan"> pertanyaan mengenai informasi pesanan</p>
             <fieldset style="margin-bottom: 20px;">
                 <legend id ="pesanan1">
-                    <button id="slide3"  onclick="slidepesan()">
-                        apakah ini berhasil? <i id="ikonpesan1" class="fa fa-angle-double-down" ></i>
+                    <button id="slidep1"  onclick="slidepesan1()">
+                        Lorem Ipsum <i id="ikonpesan1" class="fa fa-angle-double-down" ></i>
                     </button>
                 </legend>
                 <div id="askpesan1" >
                     <table>
                         <tr>
-                            <td style="border-style: solid; border-color: black; border-radius: 22pt;">
-                                <p> jeng jeng jeng</p></td>
+                            <td id="isi">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
                         </tr>
                     </table>
                 </div>
                 </fieldset>
-
+                <fieldset style="margin-bottom: 20px;">
+                    <legend id ="pesanan2">
+                        <button id="slidep2"  onclick="slidepesan2()">
+                            Lorem Ipsum <i id="ikonpesan2" class="fa fa-angle-double-down" ></i>
+                        </button>
+                    </legend>
+                    <div id="askpesan2" >
+                        <table>
+                            <tr>
+                                <td id="isi">
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    </fieldset>
             <h3 class="lain"> LAIN-LAIN </h3>
             <fieldset style="margin-bottom: 20px;">
                 <legend id ="lain1">
-                    <button id="slide4"  onclick="slidelain()">
-                        apakah ini berhasil? <i id="ikonlain1" class="fa fa-angle-double-down" ></i>
+                    <button id="slidel1"  onclick="slidelain1()">
+                        Lorem Ipsum <i id="ikonlain1" class="fa fa-angle-double-down" ></i>
                     </button>
                 </legend>
                 <div id="asklain1" >
                     <table>
                         <tr>
-                            <td style="border-style: solid; border-color: black; border-radius: 22pt;">
-                                <p> jeng jeng jeng</p></td>
+                            <td id="isi">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
                         </tr>
                     </table>
                 </div>
                 </fieldset>
+                <fieldset style="margin-bottom: 20px;">
+                    <legend id ="lain2">
+                        <button id="slidel2"  onclick="slidelain2()">
+                            Lorem Ipsum <i id="ikonlain2" class="fa fa-angle-double-down" ></i>
+                        </button>
+                    </legend>
+                    <div id="asklain2" >
+                        <table>
+                            <tr>
+                                <td id="isi">
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    </fieldset>
+        </div>
+        <div class="contact">
+            <h1 id="contactus"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact us for more : </h1>
+            <div id="contacts">
+            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> John (john@gimal.com)</p>
+            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Jane (jane@gimal.com)</p>
+            </div> 
         </div>
     </body>
