@@ -37,7 +37,7 @@ for(var i=0;i<booksStorage.length;i++){
 }
 
 function sortByTitle(){
-    books.sort((a, b) => a.title.localeCompare(b.title));
+    booksStorage.sort((a, b) => a.title.localeCompare(b.title));
         
     for(var i=0;i<books.length;i++){
         var img = document.getElementById("img"+i);
@@ -45,18 +45,18 @@ function sortByTitle(){
         var author = document.getElementById("author"+i);
         var price = document.getElementById("price"+i);
         var rating = document.getElementById("rating"+i);
-        img.src = books[i].image_url;
-        title.innerHTML = books[i].title;
-        author.innerHTML = books[i].author;
-        rating.innerHTML = "Rating : "+books[i].rating;
-        price.innerHTML = "Rp." + books[i].price;
+        img.src = booksStorage[i].image_url;
+        title.innerHTML = booksStorage[i].title;
+        author.innerHTML = booksStorage[i].author;
+        rating.innerHTML = "Rating : "+booksStorage[i].rating;
+        price.innerHTML = "Rp." + booksStorage[i].price;
         
     }
 } 
 
 function sortByAuthor(){
 
-    books.sort((a, b) => a.author.localeCompare(b.author));
+    booksStorage.sort((a, b) => a.author.localeCompare(b.author));
         
     for(var i=0;i<books.length;i++){
         var img = document.getElementById("img"+i);
@@ -64,18 +64,17 @@ function sortByAuthor(){
         var author = document.getElementById("author"+i);
         var price = document.getElementById("price"+i);
         var rating = document.getElementById("rating"+i);
-        img.src = books[i].image_url;
-        title.innerHTML = books[i].title;
-        author.innerHTML = books[i].author;
-        rating.innerHTML = "Rating : "+books[i].rating;
-        price.innerHTML = "Rp." + books[i].price;
-        
+        img.src = booksStorage[i].image_url;
+        title.innerHTML = booksStorage[i].title;
+        author.innerHTML = booksStorage[i].author;
+        rating.innerHTML = "Rating : "+booksStorage[i].rating;
+        price.innerHTML = "Rp." + booksStorage[i].price;
     }
 } 
 
 function sortByRatingHighLow(){
 
-    books.sort(function(a, b){
+    booksStorage.sort(function(a, b){
         if(a.rating > b.rating) { return -1; }
         if(a.rating < b.rating) { return 1; }
         return 0;
@@ -87,17 +86,17 @@ function sortByRatingHighLow(){
         var author = document.getElementById("author"+i);
         var price = document.getElementById("price"+i);
         var rating = document.getElementById("rating"+i);
-        img.src = books[i].image_url;
-        title.innerHTML = books[i].title;
-        author.innerHTML = books[i].author;
-        rating.innerHTML = "Rating : "+books[i].rating;
-        price.innerHTML = "Rp." + books[i].price;
+        img.src = booksStorage[i].image_url;
+        title.innerHTML = booksStorage[i].title;
+        author.innerHTML = booksStorage[i].author;
+        rating.innerHTML = "Rating : "+booksStorage[i].rating;
+        price.innerHTML = "Rp." + booksStorage[i].price;
         
     }
 } 
 function sortByRatingLowHigh(){
 
-    books.sort(function(a, b){
+    booksStorage.sort(function(a, b){
         if(a.rating < b.rating) { return -1; }
         if(a.rating > b.rating) { return 1; }
         return 0;
@@ -109,17 +108,17 @@ function sortByRatingLowHigh(){
         var author = document.getElementById("author"+i);
         var price = document.getElementById("price"+i);
         var rating = document.getElementById("rating"+i);
-        img.src = books[i].image_url;
-        title.innerHTML = books[i].title;
-        author.innerHTML = books[i].author;
-        rating.innerHTML = "Rating : "+books[i].rating;
-        price.innerHTML = "Rp." + books[i].price;
+        img.src = booksStorage[i].image_url;
+        title.innerHTML = booksStorage[i].title;
+        author.innerHTML = booksStorage[i].author;
+        rating.innerHTML = "Rating : "+booksStorage[i].rating;
+        price.innerHTML = "Rp." + booksStorage[i].price;
         
     }
 } 
 function sortByPriceLowHigh(){
 
-    books.sort(function(a, b){
+    booksStorage.sort(function(a, b){
         if(a.price < b.price) { return -1; }
         if(a.price > b.price) { return 1; }
         return 0;
@@ -131,36 +130,49 @@ function sortByPriceLowHigh(){
         var author = document.getElementById("author"+i);
         var price = document.getElementById("price"+i);
         var rating = document.getElementById("rating"+i);
-        img.src = books[i].image_url;
-        title.innerHTML = books[i].title;
-        author.innerHTML = books[i].author;
-        rating.innerHTML = "Rating : "+books[i].rating;
-        price.innerHTML = "Rp." + books[i].price;
+        img.src = booksStorage[i].image_url;
+        title.innerHTML = booksStorage[i].title;
+        author.innerHTML = booksStorage[i].author;
+        rating.innerHTML = "Rating : "+booksStorage[i].rating;
+        price.innerHTML = "Rp." + booksStorage[i].price;
         
     }
 } 
 
 
-const onClick = function() {
-    console.log(this.id);
-  }
-  function addCart(){
-    let id = this.id;
-    console.log(books[id.substring(4)].in_cart);
-    // books[id.substring(4)].in_cart+=1;
-    
-    console.log(books[id.substring(4)].title +" in cart :  "+ books[id.substring(4)].in_cart);
-    alert("books has been added to your shopping cart");
+function addToCart0(){
+    books[0].in_cart= books[0].in_cart + 1;
+    localStorage.setItem('array_incart',JSON.stringify(books));
+    alert("A book has been added to your cart!");
 }
-document.getElementById('cart0').onclick = addCart;
-document.getElementById('cart1').onclick = addCart;
-document.getElementById('cart2').onclick = addCart;
-document.getElementById('cart3').onclick = addCart;
-document.getElementById('cart4').onclick = addCart;
+
+function addToCart1(){
+    books[1].in_cart= books[1].in_cart + 1;
+    localStorage.setItem('array_incart',JSON.stringify(books));
+    alert("A book has been added to your cart!");
+}
+
+function addToCart2(){
+    books[2].in_cart= books[2].in_cart + 1;
+    localStorage.setItem('array_incart',JSON.stringify(books));
+    alert("A book has been added to your cart!");
+}
+
+function addToCart3(){
+    books[3].in_cart= books[3].in_cart + 1;
+    localStorage.setItem('array_incart',JSON.stringify(books));
+    alert("A book has been added to your cart!");
+}
+
+function addToCart4(){
+    books[4].in_cart= books[4].in_cart + 1;
+    localStorage.setItem('array_incart',JSON.stringify(books));
+    alert("A book has been added to your cart!");
+}
 
 function searchButton(){
     let input = document.getElementById('search_input').value;
-    if(input == "Dracula" || input=="dracula"){
+    if(input == "Dracula" || input=="dracula" || "Bram Stoker" || "bram stoker"){
         window.location.href ="../Page/detailsBuku.html";
     }
     else{
