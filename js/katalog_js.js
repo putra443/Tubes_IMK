@@ -157,3 +157,13 @@ document.getElementById('cart1').onclick = addCart;
 document.getElementById('cart2').onclick = addCart;
 document.getElementById('cart3').onclick = addCart;
 document.getElementById('cart4').onclick = addCart;
+
+function searchButton(){
+    let input = document.getElementById('search_input').value;
+    if(input == "Dracula" || input=="dracula"){
+        window.location.href ="../Page/detailsBuku.html";
+    }
+    else{
+        alert("no books were found, try searching another title");
+    }
+}
