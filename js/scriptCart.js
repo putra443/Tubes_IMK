@@ -47,3 +47,7 @@ function checkbox1(){
     }
 }
 
+let currentUser = (JSON.parse(localStorage.getItem('current_user')));
+document.getElementById('sub_total').innerHTML = "Rp " + currentUser.amount_to_pay;
+document.getElementById('total_price').innerHTML = "Rp. " + ((currentUser.amount_to_pay/10)+currentUser.amount_to_pay);
+

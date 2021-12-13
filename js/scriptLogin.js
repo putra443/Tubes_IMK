@@ -21,6 +21,7 @@ function loginValidation(){
     for(let i=0; i<arrayUser.length;i++){
         let usernameData = arrayUser[i].username;
         let passwordData = arrayUser[i].password;
+        let userCompleteData = arrayUser[i];
         
         if(usernameInput=="" || passwordInput=="" || usernameInput!=usernameData || passwordInput!= passwordData){
             if(i==3){
@@ -29,7 +30,7 @@ function loginValidation(){
         }
         else{
             window.location.href = "../Page/katalog.html";
-            localStorage.setItem('current_user', JSON.stringify(usernameData));
+            localStorage.setItem('current_user', JSON.stringify(userCompleteData));
             break;
         }
     }

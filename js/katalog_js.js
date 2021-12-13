@@ -1,7 +1,7 @@
 
 
 let current_user = JSON.parse(localStorage.getItem('current_user')) ;
-document.getElementById('profil').innerHTML = "Hi, " + current_user;
+document.getElementById('profil').innerHTML = "Hi, " + current_user.username;
 
 //initiate array
 myStorage = window.localStorage;
@@ -141,32 +141,52 @@ function sortByPriceLowHigh(){
 
 
 function addToCart0(){
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[0].in_cart= books[0].in_cart + 1;
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    console.log(currentUser.amount_to_pay);
     alert("A book has been added to your cart!");
 }
 
 function addToCart1(){
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[1].in_cart= books[1].in_cart + 1;
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    console.log(currentUser.amount_to_pay);
     alert("A book has been added to your cart!");
 }
 
 function addToCart2(){
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[2].in_cart= books[2].in_cart + 1;
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    console.log(currentUser.amount_to_pay);
     alert("A book has been added to your cart!");
 }
 
 function addToCart3(){
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[3].in_cart= books[3].in_cart + 1;
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    console.log(currentUser.amount_to_pay);
     alert("A book has been added to your cart!");
 }
 
 function addToCart4(){
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[4].in_cart= books[4].in_cart + 1;
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    console.log(currentUser.amount_to_pay);
     alert("A book has been added to your cart!");
 }
 
