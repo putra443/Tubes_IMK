@@ -4,10 +4,11 @@
 }
 body {
 	font-family: fonts;
+    color: #000000;
 	background-color: #ebebeb;
 }
 .header {
-    background-color: #a36700;
+    background-color: chocolate;
 }
 
 .bookholic {
@@ -69,7 +70,7 @@ body {
 
 #btn_login{
     display: block;
-    background-color: #a36700;
+    background-color: chocolate;
     padding: 15px 25px;
     border-radius: 25px;
     border: none;
@@ -83,4 +84,5 @@ body {
     text-align: center;
     font-size: 60px;
     margin: 0;
+    
 }
