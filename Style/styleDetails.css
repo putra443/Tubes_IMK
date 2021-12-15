@@ -4,6 +4,7 @@
     padding: 45px;
     border-radius: 25px;
     display: flex;
+    border: 3px dashed grey;
 }
 
 .details_container img{
@@ -11,6 +12,7 @@
     height: 650px;
     border-radius: 25px;
     float: left;
+    
 }
 
 article {
@@ -24,5 +26,5 @@ article {
     margin-top: 60%;
     width: 15%;
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
