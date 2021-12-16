@@ -8,7 +8,8 @@ body {
 	background-color: #ebebeb;
 }
 .header {
-    background-color: chocolate;
+    border: 2px dashed grey;
+    background-color: #e2d6d6;
 }
 
 .bookholic {
@@ -30,7 +31,7 @@ body {
     margin-left: 35%;
     border-radius: 5%;
     border-style: groove;
-    background-color: #e0bf84
+    background-color: #7e715bfb
 }
 
 .Login {
@@ -70,15 +71,19 @@ body {
 
 #btn_login{
     display: block;
-    background-color: chocolate;
+    background-color: lightsalmon;
     padding: 15px 25px;
     border-radius: 25px;
     border: none;
     color: white;
 }
+#btn_login:hover{
+    background-color: chocolate;
+}
 body {
     margin: 0;
-    background-image: url(../Image/photo-1603484477859-abe6a73f9366.jpg);
+    background-color: #e2d6d6;
+    /* background-image: url(../Image/photo-1603484477859-abe6a73f9366.jpg); */
 }
 .user_icon{
     text-align: center;
