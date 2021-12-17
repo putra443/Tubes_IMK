@@ -1,5 +1,3 @@
-
-
 let current_user = JSON.parse(localStorage.getItem('current_user')) ;
 document.getElementById('profil').innerHTML = "Hi, " + current_user.username;
 
@@ -22,7 +20,7 @@ let books = [
 localStorage.setItem('array_books', JSON.stringify(books));
 let booksStorage = (JSON.parse(localStorage.getItem('array_books')));
 
-for(var i=0;i<booksStorage.length;i++){
+for(var i=0;i<booksStorage.length;i++) {
     var img = document.getElementById("img"+i);
     var title = document.getElementById("title"+i);
     var author = document.getElementById("author"+i);
@@ -33,10 +31,9 @@ for(var i=0;i<booksStorage.length;i++){
     author.innerHTML = booksStorage[i].author;
     rating.innerHTML = "Rating : "+booksStorage[i].rating;
     price.innerHTML = "Rp." + booksStorage[i].price;
-    
 }
 
-function sortByTitle(){
+function sortByTitle() {
     booksStorage.sort((a, b) => a.title.localeCompare(b.title));
         
     for(var i=0;i<books.length;i++){
@@ -50,12 +47,10 @@ function sortByTitle(){
         author.innerHTML = booksStorage[i].author;
         rating.innerHTML = "Rating : "+booksStorage[i].rating;
         price.innerHTML = "Rp." + booksStorage[i].price;
-        
     }
 } 
 
-function sortByAuthor(){
-
+function sortByAuthor() {
     booksStorage.sort((a, b) => a.author.localeCompare(b.author));
         
     for(var i=0;i<books.length;i++){
@@ -72,15 +67,14 @@ function sortByAuthor(){
     }
 } 
 
-function sortByRatingHighLow(){
-
+function sortByRatingHighLow() {
     booksStorage.sort(function(a, b){
         if(a.rating > b.rating) { return -1; }
         if(a.rating < b.rating) { return 1; }
         return 0;
     })
         
-    for(var i=0;i<books.length;i++){
+    for(var i=0;i<books.length;i++) {
         var img = document.getElementById("img"+i);
         var title = document.getElementById("title"+i);
         var author = document.getElementById("author"+i);
@@ -91,18 +85,16 @@ function sortByRatingHighLow(){
         author.innerHTML = booksStorage[i].author;
         rating.innerHTML = "Rating : "+booksStorage[i].rating;
         price.innerHTML = "Rp." + booksStorage[i].price;
-        
     }
 } 
-function sortByRatingLowHigh(){
-
+function sortByRatingLowHigh() {
     booksStorage.sort(function(a, b){
         if(a.rating < b.rating) { return -1; }
         if(a.rating > b.rating) { return 1; }
         return 0;
     })
         
-    for(var i=0;i<books.length;i++){
+    for(var i=0;i<books.length;i++) {
         var img = document.getElementById("img"+i);
         var title = document.getElementById("title"+i);
         var author = document.getElementById("author"+i);
@@ -113,18 +105,16 @@ function sortByRatingLowHigh(){
         author.innerHTML = booksStorage[i].author;
         rating.innerHTML = "Rating : "+booksStorage[i].rating;
         price.innerHTML = "Rp." + booksStorage[i].price;
-        
     }
 } 
-function sortByPriceLowHigh(){
-
+function sortByPriceLowHigh() {
     booksStorage.sort(function(a, b){
         if(a.price < b.price) { return -1; }
         if(a.price > b.price) { return 1; }
         return 0;
     })
         
-    for(var i=0;i<books.length;i++){
+    for(var i=0;i<books.length;i++) {
         var img = document.getElementById("img"+i);
         var title = document.getElementById("title"+i);
         var author = document.getElementById("author"+i);
@@ -135,12 +125,11 @@ function sortByPriceLowHigh(){
         author.innerHTML = booksStorage[i].author;
         rating.innerHTML = "Rating : "+booksStorage[i].rating;
         price.innerHTML = "Rp." + booksStorage[i].price;
-        
     }
 } 
 
 
-function addToCart0(){
+function addToCart0() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[0].in_cart= books[0].in_cart + 1;
     currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
@@ -150,7 +139,7 @@ function addToCart0(){
     alert("A book has been added to your cart!");
 }
 
-function addToCart1(){
+function addToCart1() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[1].in_cart= books[1].in_cart + 1;
     currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
@@ -160,7 +149,7 @@ function addToCart1(){
     alert("A book has been added to your cart!");
 }
 
-function addToCart2(){
+function addToCart2() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[2].in_cart= books[2].in_cart + 1;
     currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
@@ -170,7 +159,7 @@ function addToCart2(){
     alert("A book has been added to your cart!");
 }
 
-function addToCart3(){
+function addToCart3() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[3].in_cart= books[3].in_cart + 1;
     currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
@@ -180,7 +169,7 @@ function addToCart3(){
     alert("A book has been added to your cart!");
 }
 
-function addToCart4(){
+function addToCart4() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[4].in_cart= books[4].in_cart + 1;
     currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
@@ -190,7 +179,7 @@ function addToCart4(){
     alert("A book has been added to your cart!");
 }
 
-function searchButton(){
+function searchButton() {
     let input = document.getElementById('search_input').value;
     if(input == "Dracula" || input=="dracula" || "Bram Stoker" || "bram stoker"){
         window.location.href ="../Page/detailsBuku.html";

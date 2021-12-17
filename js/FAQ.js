@@ -12,6 +12,7 @@ function slideumum() {
         dropdown.style.display = "flex";
     }
 }
+
 function slideumum2() {
     var a = document.getElementById("ikonumum2");
     var dropdown = document.getElementById("askumum2");
@@ -25,6 +26,7 @@ function slideumum2() {
         dropdown.style.display = "flex";
     }
 }
+
 function slideumum3() {
     var a = document.getElementById("ikonumum3");
     var dropdown = document.getElementById("askumum3");
@@ -38,6 +40,7 @@ function slideumum3() {
         dropdown.style.display = "flex";
     }
 }
+
 function slidepay1() {
     var a = document.getElementById("ikonpay1");
     var dropdown = document.getElementById("askpay1");
@@ -51,6 +54,7 @@ function slidepay1() {
         dropdown.style.display = "flex";
     }
 }
+
 function slidepay2() {
     var a = document.getElementById("ikonpay2");
     var dropdown = document.getElementById("askpay2");
@@ -78,6 +82,7 @@ function slidepesan1() {
         dropdown.style.display = "flex";
     }
 }
+
 function slidepesan2() {
     var a = document.getElementById("ikonpesan2");
     var dropdown = document.getElementById("askpesan2");
@@ -105,6 +110,7 @@ function slidelain1() {
         dropdown.style.display = "flex";
     }
 }
+
 function slidelain2() {
     var a = document.getElementById("ikonlain2");
     var dropdown = document.getElementById("asklain2");

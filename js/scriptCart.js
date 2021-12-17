@@ -1,7 +1,6 @@
-
 let storageBookCart = (JSON.parse(localStorage.getItem('array_incart')));
 
-for(i=0;i<storageBookCart.length;i++){
+for(i=0;i<storageBookCart.length;i++) {
     if(storageBookCart[i].in_cart>0){
         var display = document.getElementById("item"+i);
         var img = document.getElementById("img"+i);
@@ -18,38 +17,39 @@ for(i=0;i<storageBookCart.length;i++){
         price.style.color = "#990000";
     }
 }
-function checkbox0(){
+
+function checkbox0() {
     let checkbox = document.getElementById("checkbox0");
     let checkValue = 0;
-    if(checkbox.checked){
+    if(checkbox.checked) {
         checkValue=1;
-        if(checkValue==1){
+        if(checkValue==1) {
             document.getElementById('item0').style.backgroundColor = "#33cc66";
         }
     }
-    else{
+    else {
         checkValue = 0;
         document.getElementById('item0').style.backgroundColor = "#999999";
     }
 }
-function checkbox1(){
+
+function checkbox1() {
     let checkbox = document.getElementById("checkbox1");
     let checkValue = 0;
-    if(checkbox.checked){
+    if(checkbox.checked) {
         checkValue=1;
-        if(checkValue==1){
+        if(checkValue==1) {
             document.getElementById('item1').style.backgroundColor = "#33cc66";
         }
     }
-    else{
+    else {
         checkValue = 0;
         document.getElementById('item1').style.backgroundColor = "#999999";
     }
 }
 
-function deleteCart(){
+function deleteCart() {
     alert("A book has been removed from your cart!");
-    
     document.getElementById("item0").style.display = "none";
     updateStorage();
 }
