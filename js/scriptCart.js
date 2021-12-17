@@ -47,7 +47,23 @@ function checkbox1(){
     }
 }
 
-let currentUser = (JSON.parse(localStorage.getItem('current_user')));
-document.getElementById('sub_total').innerHTML = "Rp " + currentUser.amount_to_pay;
-document.getElementById('total_price').innerHTML = "Rp. " + ((currentUser.amount_to_pay/10)+currentUser.amount_to_pay);
+function deleteCart(){
+    alert("A book has been removed from your cart!");
+    
+    document.getElementById("item0").style.display = "none";
+    updateStorage();
+}
 
+function updateStorage() {
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
+    currentUser.amount_to_pay = currentUser.amount_to_pay - storageBookCart[0].price;
+    storageBookCart[0].in_cart= 0;
+    localStorage.setItem('array_incart',JSON.stringify(storageBookCart));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    window.location.href="../Page/cart.html"
+}
+
+let currentUser = (JSON.parse(localStorage.getItem('current_user')));
+document.getElementById('sub_total').innerHTML = " Subtotal : Rp " + currentUser.amount_to_pay;
+    document.getElementById('total_price').innerHTML = " Total : Rp. " + ((currentUser.amount_to_pay/10)+currentUser.amount_to_pay);
+    console.log(currentUser.amount_to_pay);
