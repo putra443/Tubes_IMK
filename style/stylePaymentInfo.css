@@ -264,3 +264,7 @@ body h2 {
 .pay button:hover{
     background-color: #2980B9;
 }
+
+#select_virtual_account {
+    font-size: 15px;
+}
