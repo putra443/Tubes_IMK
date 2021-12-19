@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="../lib/font-awesome.css">
 		<link rel="stylesheet" href="../lib/font-awesome.min.css">
         <link rel="stylesheet" href="../style/stylePaymentInfo.css">
-        <script src="../js/scriptPaymentInfo.js"></script>
+        <script src="../js/scriptPaymentInfo.js" defer></script>
     </head>
 
     <body>
@@ -51,10 +51,10 @@
                                 </div>
 
                                 <div class="pay">
-                                    <p>Sub-Total : Rp.150000</p>
+                                    <p id="sub-total">Sub-Total : Rp.150000</p>
                                     <p>Tax : 10%</p>
-                                    <p>Total : Rp.165000</p>
-                                    <button> Pay</button>
+                                    <p id="total">Total : Rp.165000</p>
+                                    <button onclick="warning()"> Pay</button>
                                 </div>
                             </div>
                         </div>

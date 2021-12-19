@@ -1,7 +1,8 @@
 let storageBookCart = (JSON.parse(localStorage.getItem('array_incart')));
-
+let current_user_navbar = JSON.parse(localStorage.getItem('current_user')) ;
+document.getElementById('profil').innerHTML = "Hi, " + current_user_navbar.username;
 for(i=0;i<storageBookCart.length;i++) {
-    if(storageBookCart[i].in_cart>0){
+    if(storageBookCart[i].in_cart=1){
         var display = document.getElementById("item"+i);
         var img = document.getElementById("img"+i);
         var title = document.getElementById("title"+i);
