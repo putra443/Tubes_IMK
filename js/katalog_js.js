@@ -182,8 +182,8 @@ function addToCart4() {
 
 function searchButton() {
     let input = document.getElementById('search_input').value;
-    if(input == "Dracula" || input=="dracula" || "Bram Stoker" || "bram stoker"){
-        window.location.href ="../Page/detailsBuku.html";
+    if(input == "Dracula" || input == "dracula" || input == "Bram Stoker" || input == "bram stoker" || input == "1561385158" || input == "9781561385157"){
+        window.location.href ="../Page/detailsBuku2.html";
     }
     else {
         alert("no books were found, try searching another title");
