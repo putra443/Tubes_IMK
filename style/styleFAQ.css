@@ -97,6 +97,7 @@ body {
 .headfaq{
     text-align: center;
 }
+
 #isi{
     border-style: dashed;
     border-color: lightsalmon;
@@ -123,17 +124,32 @@ body {
 	border-color: black;
     background-color: lightsalmon;
 }
+#umum1 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
+}
 #umum2{
 	border: 2px solid;
 	border-radius: 22pt;
 	border-color: black;
     background-color: lightsalmon;
 }
+#umum2 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
+}
 #umum3{
 	border: 2px solid;
 	border-radius: 22pt;
 	border-color: black;
     background-color: lightsalmon;
+}
+#umum3 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
 }
 #askumum1{
     display: none;
@@ -186,11 +202,21 @@ body {
 	border-color: black;
     background-color: lightsalmon;
 }
+#pay1 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
+}
 #pay2{
 	border: 2px solid;
 	border-radius: 22pt;
 	border-color: black;
     background-color: lightsalmon;
+}
+#pay2 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
 }
 #askpay1{
     display: none;
@@ -232,6 +258,11 @@ body {
 	border-color: black;
     background-color: lightsalmon;
 }
+#pesanan1 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
+}
 #askpesan1{
     display: none;
     justify-content: center;
@@ -256,6 +287,11 @@ body {
 	border-color: black;
     background-color: lightsalmon;
 }
+#pesanan2 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
+}
 #askpesan2{
     display: none;
     justify-content: center;
@@ -271,6 +307,11 @@ body {
 	border-radius: 22pt;
 	border-color: black;
     background-color: lightsalmon;
+}
+#lain1 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
 }
 #asklain1{
     display: none;
@@ -296,6 +337,11 @@ background-color: transparent;
 	border-radius: 22pt;
 	border-color: black;
     background-color: lightsalmon;
+}
+#lain2 button:hover{
+    background-color: chocolate;
+    transition: 1s;
+    border-radius: 22pt;
 }
 #asklain2{
     display: none;
