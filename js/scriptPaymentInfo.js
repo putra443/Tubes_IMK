@@ -18,8 +18,8 @@
 let currentUser = JSON.parse(localStorage.getItem('current_user'));
 document.getElementById('profil').innerHTML = "Hi, " + current_user.username;
 function insertAmountToPay(){
-    let total = currentUser.amount_to_pay;
-    let sub_total = currentUser.amount_to_pay - (currentUser.amount_to_pay/10);
+    let total = currentUser.amount_to_pay + (currentUser.amount_to_pay/10);
+    let sub_total = currentUser.amount_to_pay;
     document.getElementById('total').innerHTML = "Rp. "+total;   
     document.getElementById('sub-total').innerHTML = "Rp. "+sub_total;
 }
@@ -28,6 +28,7 @@ insertAmountToPay();
 function warning(){
     if(confirm("Are you sure you want to pay?")){
         // window.location.href = "../Page/payment_success.html";
+        
         addPaymentInfo(); 
     }
     else{

@@ -1,15 +1,17 @@
 let storageBookCart = (JSON.parse(localStorage.getItem('array_incart')));
 let current_user_navbar = JSON.parse(localStorage.getItem('current_user')) ;
+
 document.getElementById('profil').innerHTML = "Hi, " + current_user_navbar.username;
-for(i=0;i<storageBookCart.length;i++) {
-    if(storageBookCart[i].in_cart=1){
-        var display = document.getElementById("item"+i);
+for(i=0;i<2;i++) {
+    if(storageBookCart[i].in_cart>0){
+        var item = document.getElementById("item"+i);
+        console.log(item);
         var img = document.getElementById("img"+i);
         var title = document.getElementById("title"+i);
         var author = document.getElementById("author"+i);
         var price = document.getElementById("price"+i);
         var rating = document.getElementById("rating"+i);
-        display.style.display = "flex";
+        item.style.display = 'flex';
         img.src = storageBookCart[i].image_url;
         title.innerHTML = storageBookCart[i].title;
         author.innerHTML = storageBookCart[i].author;
@@ -18,6 +20,15 @@ for(i=0;i<storageBookCart.length;i++) {
         price.style.color = "#990000";
     }
 }
+
+    // let price0 = parseInt(document.getElementById('price0').innerHTML.substring(3));
+
+    // let price1 = parseInt(document.getElementById('price1').innerHTML.substring(3));
+    // document.getElementById('sub_total').textContent = "Subtotal = Rp. " +(price0+price1);
+    // document.getElementById('total_price').textContent = "Total = Rp. " +((price0+price1)+((price0+price1)/10));
+    
+
+
 
 function checkbox0() {
     let checkbox = document.getElementById("checkbox0");
@@ -52,7 +63,11 @@ function checkbox1() {
 function deleteCart0() {
     alert("A book has been removed from your cart!");
     document.getElementById("item0").style.display = "none";
-    updateStorage();
+    // let subtotal = parseInt(document.getElementById('sub_total').innerHTML.substring(13));
+    // console.log(subtotal)
+    // let deletedprice0 = parseInt(document.getElementById('price0').innerHTML.substring(3));
+    // document.getElementById('sub_total').textContent = "Sub_total = Rp. " + (subtotal-deletedprice0)
+    updateStorage0();
 }
 
 function updateStorage0() {
@@ -67,7 +82,7 @@ function updateStorage0() {
 function deleteCart1() {
     alert("A book has been removed from your cart!");
     document.getElementById("item1").style.display = "none";
-    updateStorage();
+    updateStorage1();
 }
 
 function updateStorage1() {
@@ -79,6 +94,9 @@ function updateStorage1() {
     window.location.href="../Page/cart.html"
 }
 let currentUser = (JSON.parse(localStorage.getItem('current_user')));
-document.getElementById('sub_total').innerHTML = " Subtotal : Rp " + currentUser.amount_to_pay;
-    document.getElementById('total_price').innerHTML = " Total : Rp. " + ((currentUser.amount_to_pay/10)+currentUser.amount_to_pay);
+document.getElementById('sub_total').textContent = " Subtotal : Rp " + currentUser.amount_to_pay;
+    document.getElementById('total_price').textContent = " Total : Rp. " + ((currentUser.amount_to_pay/10)+currentUser.amount_to_pay);
     console.log(currentUser.amount_to_pay);
+
+
+

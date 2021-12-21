@@ -143,7 +143,7 @@ function addToCart0() {
 function addToCart1() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[1].in_cart= books[1].in_cart + 1;
-    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price1').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
@@ -153,7 +153,7 @@ function addToCart1() {
 function addToCart2() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[2].in_cart= books[2].in_cart + 1;
-    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price2').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
@@ -163,7 +163,7 @@ function addToCart2() {
 function addToCart3() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[3].in_cart= books[3].in_cart + 1;
-    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price3').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
@@ -173,7 +173,7 @@ function addToCart3() {
 function addToCart4() {
     let currentUser = (JSON.parse(localStorage.getItem('current_user')));
     books[4].in_cart= books[4].in_cart + 1;
-    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price4').innerHTML.substring(3));
     localStorage.setItem('array_incart',JSON.stringify(books));
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
@@ -215,4 +215,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+function buyNow0(){
+    let currentUser = (JSON.parse(localStorage.getItem('current_user')));
+    currentUser.amount_to_pay = currentUser.amount_to_pay + parseInt(document.getElementById('price0').innerHTML.substring(3));
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
+    console.log(currentUser.amount_to_pay);
 }

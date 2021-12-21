@@ -8,3 +8,9 @@ function loadPaymentInfo(){
     document.getElementById('payment_method').innerHTML = "Payment Method: "+currentUserPaymentInfo.payment_method;
 }
 loadPaymentInfo();
+
+function resetAll(){
+    localStorage.removeItem('array_incart');
+    let currentUser = JSON.parse(localStorage.getItem('current_user'));
+    currentUser.amount_to_pay = 0;
+}
