@@ -2,8 +2,16 @@
     font-family: fonts;
     src: url(../fonts/Candara.ttf);
 }
+@font-face {
+  font-family: monserat_medium;
+  src: url(../fonts/MontserratAlternates-Medium.ttf);
+}
+@font-face {
+  font-family: monserat_light;
+  src: url(../fonts/MontserratAlternates-Light.ttf);
+}
 body {
-	font-family: fonts;
+	font-family: monserat_medium;
 	background-color: #e2d6d6;
     margin: 0;
     background-color: none;
@@ -162,6 +170,7 @@ body {
 
 .content_catalog_filter button::before{
        content: "";
+       isolation: isolate;
        position: absolute;
        left: 0;
        width: 100%;
@@ -206,6 +215,8 @@ body {
 }
 .book_row1{
     margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 100%;
     background-color:  #ffe6cc;
 }
 .book_row1 img{
@@ -244,16 +255,17 @@ body {
 }
 
 .page_numbering{
-    margin: 0px 40%;
+    margin: 38% 40%;
 }
-
+.numbering{
+float: left;
+  
+}
 .numbering a{
-    float: left;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: chocolate;
     width: 8%;
-    margin: 0px 5px;
     margin-bottom: 15px;
     padding: 25px;
     height: 25px;

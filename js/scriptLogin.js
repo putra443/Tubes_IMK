@@ -22,7 +22,9 @@ function loginValidation() {
         
         if(usernameInput=="" || passwordInput=="" || usernameInput!=usernameData || passwordInput!= passwordData) {
             if(i==3) {
-                alert("Username atau Password Salah");
+                // alert("Username atau Password Salah");
+                
+                Swal.fire("Alert","Wrong Password or Username","warning");
             }
         }
         else {

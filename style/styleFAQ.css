@@ -374,3 +374,8 @@ background-color: transparent;
     margin-top: 25px;
     text-decoration: none;
 }
+
+.lang_value{
+    text-decoration: none;
+    color: white;
+}

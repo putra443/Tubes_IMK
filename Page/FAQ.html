@@ -6,6 +6,29 @@
         <link rel="stylesheet" href="../Style/styleKatalog.css">
         <link rel="stylesheet" href="../Style/styleFAQ.css">
         <link rel="stylesheet" href="../lib/flag-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '64px', // default: '32px'
+                right: '32px', // default: '32px'
+                left: 'unset', // default: 'unset'
+                time: '0.5s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#e2d6d6',  // default: '#fff'
+                buttonColorDark: '000',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        }
+
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
         <script src="../js/katalog_js.js" defer></script>
         <script src="../js/FAQ.js" ></script>
     </head>
@@ -182,8 +205,8 @@
             <h1 id="contactus"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact us for more : </h1>
             <div class="language">
                 <h1 id="change">Ganti Bahasa : 
-                <a href="../Page/FAQ_Inggris.html"><i class="flag-icon flag-icon-us"></i> US </a>
-                <a href="../Page/FAQ.html"><i class="flag-icon flag-icon-id"></i> ID </a></h1>
+                <a href="../Page/FAQ_Inggris.html" style="text-decoration: none;color: white;"><i class="flag-icon flag-icon-us"></i> US </a>
+                <a href="../Page/FAQ.html" style="text-decoration: none;color: white;"><i class="flag-icon flag-icon-id"></i> ID </a></h1>
             </div>
             <div id="contacts">
             <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> John (john@gimal.com)</p>

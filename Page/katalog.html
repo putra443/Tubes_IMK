@@ -4,13 +4,34 @@
         <link rel="stylesheet" href="../lib/font-awesome.css">
 		<link rel="stylesheet" href="../lib/font-awesome.min.css">
         <link rel="stylesheet" href="../Style/styleKatalog.css">
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script>
+            function addDarkmodeWidget() {
+                const options = {
+                    bottom: '64px', // default: '32px'
+                    right: '32px', // default: '32px'
+                    left: 'unset', // default: 'unset'
+                    time: '0.5s', // default: '0.3s'
+                    mixColor: '#fff', // default: '#fff'
+                    backgroundColor: '#e2d6d6',  // default: '#fff'
+                    buttonColorDark: '000',  // default: '#100f2c'
+                    buttonColorLight: '#fff', // default: '#fff'
+                    saveInCookies: true, // default: true,
+                    label: '🌓', // default: ''
+                    autoMatchOsTheme: true // default: true
+                }
+                const darkmode = new Darkmode(options);
+                darkmode.showWidget();
+            }
 
+            window.addEventListener('load', addDarkmodeWidget);
+        </script>
         <script src="../js/katalog_js.js" defer></script>
         <script src="../js_sweetAlert/sweetalert2.all.min.js"></script>
     </head>
     <body>
 
-        </div>
+        
         <div class="topnav">
             <a href="../Page/katalog.html" id="title">Bookholic</a>
             <input id="search_input" type="text" placeholder="Search by title / author / ISBN here..">
@@ -121,7 +142,6 @@
                     </div>     
                 <!-- </div> -->
             </div>
-
             <div class="page_numbering">
                 <div class="numbering">
                     <a href="../Page/katalog.html">1</a>
