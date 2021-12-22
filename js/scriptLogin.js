@@ -2,7 +2,7 @@
 let user = [
     {username:"martin", password:"martin123", amount_to_pay:0, address:"Jl Kemangi no 25"},
     {username:"putra", password:"putra123", amount_to_pay:0, address:"Jl Dipatiukur no 34"},
-    {username:"ruben pepeu", password:"ruben123", amount_to_pay:0, address:"Jl Salendro no 55"},
+    {username:"ruben", password:"ruben123", amount_to_pay:0, address:"Jl Salendro no 55"},
     {username:"michael", password:"michael123", amount_to_pay:0,address:"Jl Cihampelas no 66"},
 ];
 
@@ -11,7 +11,6 @@ localStorage.setItem("array_user",JSON.stringify(user));
 let arrayUser = (JSON.parse(localStorage.getItem('array_user')));
 
 function loginValidation() {
-    // window.location.href = "../Page/katalog.html";
     let usernameInput = document.getElementById('username').value;
     let passwordInput = document.getElementById('pass').value;
 
@@ -22,8 +21,6 @@ function loginValidation() {
         
         if(usernameInput=="" || passwordInput=="" || usernameInput!=usernameData || passwordInput!= passwordData) {
             if(i==3) {
-                // alert("Username atau Password Salah");
-                
                 Swal.fire("Alert","Wrong Password or Username","warning");
             }
         }

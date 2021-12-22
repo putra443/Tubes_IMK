@@ -63,10 +63,6 @@ function checkbox1() {
 function deleteCart0() {
     alert("A book has been removed from your cart!");
     document.getElementById("item0").style.display = "none";
-    // let subtotal = parseInt(document.getElementById('sub_total').innerHTML.substring(13));
-    // console.log(subtotal)
-    // let deletedprice0 = parseInt(document.getElementById('price0').innerHTML.substring(3));
-    // document.getElementById('sub_total').textContent = "Sub_total = Rp. " + (subtotal-deletedprice0)
     updateStorage0();
 }
 

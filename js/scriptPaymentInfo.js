@@ -1,20 +1,3 @@
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
-  
-// window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var i;
-//         for (i = 0; i < dropdowns.length; i++) {
-//             var openDropdown = dropdowns[i];
-//             if (openDropdown.classList.contains('show')) {
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
 let currentUser = JSON.parse(localStorage.getItem('current_user'));
 document.getElementById('profil').innerHTML = "Hi, " + current_user.username;
 function insertAmountToPay(){
@@ -27,9 +10,6 @@ insertAmountToPay();
 
 function warning(){
     if(confirm("Are you sure you want to pay?")){
-        // window.location.href = "../Page/payment_success.html";
-        
-        // addPaymentInfo(); 
     }
     else{
         alert("Your payment has been canceled.");
