@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../style/styleKatalog.css">
         <script src="../js/katalog_js.js"></script>
         <script src="../js/scriptPaymentInfo.js" defer></script>
+        <script src="../js_sweetAlert/sweetalert2.all.min.js"></script>
     </head>
 
     <body>
@@ -15,6 +16,7 @@
             <a href="../Page/katalog.html" id="title">Bookholic</a>
             <input type="text" placeholder="Search by title / author / ISBN here..">
             <button type="submit"><i class="fa fa-search"></i></button>
+            <a href="../Page/katalog.html" id="catalogue_btn"> Catalogue</a>
             <a href="../Page/FAQ.html" id="faq">FAQ</a>
             <div class="tooltip">
                 <a href="../Page/halaman login.html" class="fa fa-power-off logout"></a>
@@ -61,7 +63,50 @@
                                     <p id="sub-total">Sub-Total : Rp.150000</p>
                                     <p>Tax : 10%</p>
                                     <p id="total">Total : Rp.165000</p>
-                                    <button onclick="warning()"> Pay</button>
+                                    <button id="pay_btn"> Pay</button>
+                                    <script>
+                                        const btn = document.getElementById('pay_btn');
+                                        btn.addEventListener('click', function(){
+                                            Swal.fire({
+                                                title: 'Warning',
+                                                text: "Are you sure you want to pay?",
+                                                icon: 'warning',
+                                                showCancelButton: true,
+                                                confirmButtonColor: '#3085d6',
+                                                cancelButtonColor: '#d33',
+                                                confirmButtonText: 'Pay'
+                                                }).then((result) => {
+                                                if (result.isConfirmed) {
+                                                    Swal.fire({
+                                                    title:'Notification',
+                                                    text:'Your payment has been successful.',
+                                                    icon:'success'
+                                                    }).then((result)=>{
+                                                        if(result.isConfirmed){
+                                                            let fullName = document.getElementById('fname').value;
+                                                            let email = document.getElementById('email').value;
+                                                            let adress = document.getElementById('adr').value;
+                                                            let payment_method = document.getElementById('select_virtual_account').value;
+                                                            console.log(fullName);
+                                                            console.log(email);
+                                                            console.log(adress);
+                                                            console.log(payment_method);
+                                                            let currentUserInfo = {fullName: fullName, email: email, address:adress, payment_method:payment_method}
+                                                            localStorage.setItem('user_payment_info',JSON.stringify(currentUserInfo));
+                                                            window.location.href = '../Page/payment_success.html';
+                                                        }
+                                                    });  
+                                                }
+                                                else{
+                                                    Swal.fire(
+                                                    'Notification',
+                                                    'Your payment has been canceled.',
+                                                    'canceled'
+                                                    )
+                                                }
+                                            });
+                                        })
+                                    </script>
                                 </div>
                             </div>
                         </div>

@@ -29,11 +29,12 @@ function warning(){
     if(confirm("Are you sure you want to pay?")){
         // window.location.href = "../Page/payment_success.html";
         
-        addPaymentInfo(); 
+        // addPaymentInfo(); 
     }
     else{
         alert("Your payment has been canceled.");
     }
+    
 }
 
 function addPaymentInfo(){

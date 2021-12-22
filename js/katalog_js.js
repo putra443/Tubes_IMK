@@ -137,7 +137,6 @@ function addToCart0() {
     localStorage.setItem('array_incart',JSON.stringify(books));
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
-    alert("A book has been added to your cart!");
 }
 
 function addToCart1() {
@@ -147,7 +146,6 @@ function addToCart1() {
     localStorage.setItem('array_incart',JSON.stringify(books));
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
-    alert("A book has been added to your cart!");
 }
 
 function addToCart2() {
@@ -223,3 +221,7 @@ function buyNow0(){
     localStorage.setItem('current_user',JSON.stringify(currentUser));
     console.log(currentUser.amount_to_pay);
 }
+
+const loader = document.querySelector('.loader');
+const main = document.querySelector('.main');
+

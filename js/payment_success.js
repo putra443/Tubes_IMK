@@ -13,4 +13,5 @@ function resetAll(){
     localStorage.removeItem('array_incart');
     let currentUser = JSON.parse(localStorage.getItem('current_user'));
     currentUser.amount_to_pay = 0;
+    localStorage.setItem('current_user',JSON.stringify(currentUser));
 }
