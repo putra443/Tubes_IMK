@@ -2,8 +2,16 @@
     font-family: fonts;
     src: url(../fonts/Candara.ttf);
 }
+@font-face {
+  font-family: monserat_medium;
+  src: url(../fonts/MontserratAlternates-Medium.ttf);
+}
+@font-face {
+  font-family: monserat_light;
+  src: url(../fonts/MontserratAlternates-Light.ttf);
+}
 body {
-	font-family: fonts;
+	font-family: monserat_medium;
 	background-color: #e2d6d6;
     margin: 0;
     background-color: none;
